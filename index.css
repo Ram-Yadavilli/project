@@ -10,6 +10,17 @@
   height: 50px;
 }
 
+i {
+  margin-left: 15px;
+}
+.ic1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+
 span {
   margin-left: 20px;
 }
@@ -67,6 +78,7 @@ h1 {
 }
 h2 {
   margin-right: 5%;
+  flex-grow: 1;
 }
 
 h3 {
@@ -134,6 +146,7 @@ hr {
 .ic {
   display: flex;
   flex-direction: row;
+  margin-bottom: 100px;
 }
 
 .ip {
@@ -198,13 +211,8 @@ icon {
     flex-wrap: wrap;
   }
 
-  .ic {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-bottom: 300px;
-    margin-top: 0;
-    width: 100px;
+  .ic1 {
+    margin-top: 8px;
   }
 
   h2 {
@@ -247,7 +255,7 @@ icon {
   }
 }
 
-@media all and (min-width: 801px) and (max-width: 1000px) {
+@media all and (min-width: 801px) and (max-width: 999px) {
   img {
     width: 180px;
     height: 180px;
@@ -335,10 +343,10 @@ icon {
   }
 }
 
-@media all and (min-width: 1001px) and (max-width: 1200px) {
+@media all and (min-width: 1000px) and (max-width: 1200px) {
   img {
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     border-top-right-radius: 15%;
   }
 
@@ -351,7 +359,7 @@ icon {
   }
 
   .p {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .bc {
@@ -363,21 +371,15 @@ icon {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25vw;
+    width: 20vw;
     margin-top: 2%;
     margin-bottom: 2%;
     margin-right: 5%;
     margin-left: 5%;
     padding: 1%;
     padding-top: 20px;
-  }
-
-  .bc1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .ic {
@@ -439,7 +441,7 @@ icon {
   }
 
   .p {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .bc {
@@ -451,21 +453,13 @@ icon {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25vw;
+    width: 20vw;
     margin-top: 2%;
     margin-bottom: 2%;
     margin-right: 5%;
     margin-left: 5%;
     padding: 1%;
     padding-top: 25px;
-  }
-
-  .bc1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
   }
 
   .ic {
@@ -513,17 +507,21 @@ icon {
 
 @media all and (min-width: 350px) and (max-width: 600px) {
   img {
-    width: 80vw;
+    width: 70vw;
     height: 150px;
     border-top-right-radius: 10%;
   }
 
+  i {
+    font-size: 5px;
+    margin-left: 5px;
+  }
   .c {
     width: 45%;
   }
 
-  .ic {
-    margin-bottom: 100px;
+  .ic1 {
+    margin-top: 6px;
   }
 
   h1 {
@@ -535,11 +533,11 @@ icon {
   }
 
   .p {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   h2 {
-    font-size: 6px;
+    font-size: 7px;
     margin-right: 10px;
     margin-left: 10px;
     flex-grow: 1;
@@ -553,7 +551,7 @@ icon {
     padding-left: 2%;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 10%;
+    height: 30%;
   }
 
   .f {
@@ -583,7 +581,7 @@ icon {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80vw;
+    width: 75vw;
     margin-top: 2%;
     margin-bottom: 2%;
     margin-right: 5%;
@@ -591,9 +589,6 @@ icon {
     padding: 3%;
   }
 
-  icon {
-    width: 5px;
-  }
   .ip {
     width: 10px;
   }
