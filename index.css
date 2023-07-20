@@ -21,7 +21,7 @@ span {
 }
 
 .main {
-  background-image: linear-gradient(to right, #ff00bf, #ffcccc, #ffff00);
+  background-image: linear-gradient(to right, #ff2fcb, #f39191, #e7e40a);
   width: 100vw;
   height: 100vh;
   background-size: cover;
