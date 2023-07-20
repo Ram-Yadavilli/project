@@ -21,7 +21,12 @@ span {
 }
 
 .main {
-  background-image: linear-gradient(to right, #ff2fcb, #f39191, #e7e40a);
+  background-image: linear-gradient(
+    to right,
+    rgb(245, 45, 138),
+    #e49669,
+    #eccb0b
+  );
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -66,6 +71,7 @@ h2 {
 
 h3 {
   color: black;
+  font-family: sans-serif;
 }
 
 .bc1 {
@@ -145,10 +151,10 @@ icon {
   margin-right: 120px;
 }
 
-@media all and (min-width: 601px) and (max-width: 900px) {
+@media all and (min-width: 601px) and (max-width: 800px) {
   img {
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     border-top-right-radius: 15%;
   }
 
@@ -157,7 +163,11 @@ icon {
   }
 
   p {
-    font-size: 12px;
+    font-size: 13px;
+  }
+
+  .p {
+    font-size: 15px;
   }
 
   .bc {
@@ -175,7 +185,9 @@ icon {
     margin-right: 5%;
     margin-left: 5%;
     padding: 1%;
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .bc1 {
@@ -189,27 +201,32 @@ icon {
   .ic {
     display: flex;
     flex-direction: row;
-    margin-bottom: 70px;
+    justify-content: flex-start;
+    margin-bottom: 300px;
+    margin-top: 0;
+    width: 100px;
   }
 
   h2 {
-    font-size: 12px;
+    font-size: 10px;
     margin-right: 20px;
     margin-left: 20px;
+    flex-grow: 1;
   }
 
   .th {
     padding-left: 2%;
+    padding-right: 2%;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 50px;
+    height: 30px;
   }
 
   .f {
-    margin-left: 100px;
+    margin-left: 30px;
   }
   .l {
-    margin-right: 100px;
+    margin-right: 30px;
   }
   button {
     display: block;
@@ -225,14 +242,15 @@ icon {
   }
 
   i {
-    font-size: 14px;
+    font-size: 11px;
+    padding-bottom: 50px;
   }
 }
 
-@media all and (min-width: 901px) and (max-width: 1200px) {
+@media all and (min-width: 801px) and (max-width: 1000px) {
   img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-top-right-radius: 15%;
   }
 
@@ -241,7 +259,11 @@ icon {
   }
 
   p {
-    font-size: 12px;
+    font-size: 13px;
+  }
+
+  .p {
+    font-size: 15px;
   }
 
   .bc {
@@ -259,6 +281,95 @@ icon {
     margin-right: 5%;
     margin-left: 5%;
     padding: 1%;
+    padding-top: 25px;
+  }
+
+  .bc1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .ic {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+  }
+
+  h2 {
+    font-size: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+
+  .th {
+    padding-left: 2%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 50px;
+  }
+
+  .f {
+    margin-left: 60px;
+  }
+  .l {
+    margin-right: 60px;
+  }
+  button {
+    display: block;
+    margin: 0% auto;
+    color: black;
+    width: 10%;
+    height: 35px;
+    background-color: #ffb3b3;
+    border-radius: 20px;
+    border-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  i {
+    font-size: 15px;
+  }
+}
+
+@media all and (min-width: 1001px) and (max-width: 1200px) {
+  img {
+    width: 230px;
+    height: 230px;
+    border-top-right-radius: 15%;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .p {
+    font-size: 20px;
+  }
+
+  .bc {
+    background-color: white;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 1%;
+    padding-top: 20px;
   }
 
   .bc1 {
@@ -279,6 +390,7 @@ icon {
     font-size: 17px;
     margin-right: 20px;
     margin-left: 20px;
+    flex-grow: 1;
   }
 
   .th {
@@ -289,10 +401,10 @@ icon {
   }
 
   .f {
-    margin-left: 120px;
+    margin-left: 100px;
   }
   .l {
-    margin-right: 120px;
+    margin-right: 100px;
   }
   button {
     display: block;
@@ -303,6 +415,95 @@ icon {
     background-color: #ffb3b3;
     border-radius: 20px;
     border-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  i {
+    font-size: 20px;
+  }
+}
+
+@media all and (min-width: 1201px) and (max-width: 1400px) {
+  img {
+    width: 250px;
+    height: 250px;
+    border-top-right-radius: 15%;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .p {
+    font-size: 23px;
+  }
+
+  .bc {
+    background-color: white;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 1%;
+    padding-top: 25px;
+  }
+
+  .bc1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .ic {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+  }
+
+  h2 {
+    font-size: 17px;
+    margin-right: 20px;
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+
+  .th {
+    padding-left: 2%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 50px;
+  }
+
+  .f {
+    margin-left: 100px;
+  }
+  .l {
+    margin-right: 100px;
+  }
+  button {
+    display: block;
+    margin: 0% auto;
+    color: black;
+    width: 10%;
+    height: 35px;
+    background-color: #ffb3b3;
+    border-radius: 20px;
+    border-color: transparent;
+    margin-bottom: 20px;
   }
 
   i {
@@ -314,7 +515,7 @@ icon {
   img {
     width: 80vw;
     height: 150px;
-    border-top-right-radius: 15%;
+    border-top-right-radius: 10%;
   }
 
   .c {
@@ -334,11 +535,111 @@ icon {
   }
 
   .p {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   h2 {
+    font-size: 6px;
+    margin-right: 10px;
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .th {
+    padding-left: 2%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 10%;
+  }
+
+  .f {
+    margin-left: 20px;
+  }
+  .l {
+    margin-right: 20px;
+  }
+  button {
+    display: block;
+    margin: 0% auto;
+    color: black;
+    width: 20%;
+    height: 30px;
+    background-color: #ffb3b3;
+    border-radius: 10px;
+    border-color: transparent;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  .bc {
+    background-color: white;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 3%;
+  }
+
+  icon {
+    width: 5px;
+  }
+  .ip {
+    width: 10px;
+  }
+  .bc1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (min-width: 200px) and (max-width: 350px) {
+  img {
+    width: 80vw;
+    height: 150px;
+    border-top-right-radius: 15%;
+  }
+
+  .ti {
+    height: 40vh;
+  }
+
+  .c {
+    width: 45%;
+  }
+
+  h1 {
+    font-size: 14px;
+  }
+
+  p {
     font-size: 7px;
+  }
+
+  .p {
+    font-size: 13px;
+  }
+
+  .ic {
+    margin-bottom: 500px;
+    margin-top: 0%;
+  }
+
+  h2 {
+    font-size: 3px;
     margin-right: 10px;
     margin-left: 10px;
   }
@@ -351,7 +652,7 @@ icon {
     padding-left: 2%;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 20%;
+    height: 2%;
   }
 
   .f {
@@ -389,8 +690,8 @@ icon {
     padding: 3%;
   }
 
-  icon {
-    width: 5px;
+  i {
+    font-size: 5px;
   }
   .ip {
     width: 10px;
@@ -401,5 +702,18 @@ icon {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .c {
+    height: 100%;
+  }
+  .c1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 30%;
+    height: 50%;
+    margin-left: 5%;
   }
 }
