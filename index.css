@@ -39,12 +39,11 @@ span {
     #eccb0b
   );
   width: 100vw;
-  height: 100vh;
+  height: 200%;
   background-size: cover;
 
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
 }
 
 .ti {
@@ -617,11 +616,11 @@ icon {
   }
 
   h1 {
-    font-size: 14px;
+    font-size: 7px;
   }
 
   p {
-    font-size: 7px;
+    font-size: 5px;
   }
 
   .p {
@@ -629,8 +628,7 @@ icon {
   }
 
   .ic {
-    margin-bottom: 500px;
-    margin-top: 0%;
+    margin-bottom: 90px;
   }
 
   h2 {
@@ -647,7 +645,7 @@ icon {
     padding-left: 2%;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 2%;
+    height: 15px;
   }
 
   .f {
@@ -700,8 +698,15 @@ icon {
   }
 
   .c {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 3%;
+    width: 100%;
+    background-color: rgba(236, 84, 84, 0.7);
   }
+
   .c1 {
     display: flex;
     flex-direction: row;
